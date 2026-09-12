@@ -1,0 +1,23 @@
+{
+  "recorded_on": "2026-09-12",
+  "model": "retain-grasp-20260911",
+  "cube_size_mm": 20,
+  "initial_cube_xy_mm": [
+    350,
+    0
+  ],
+  "initial_pose": "folded",
+  "success": true,
+  "hold_seconds": 5.000000260770321,
+  "clearance_mm": 124.49308217693414,
+  "tilt_deg": 0.8983151473640719,
+  "release_success": true,
+  "release_source": "task_completion_open_gripper",
+  "capture": "macOS screencapture, simulator window only",
+  "preview_trim_seconds": [
+    5,
+    34
+  ],
+  "preview_speed": 1.0,
+  "note": "A selected successful live UI run; not a success-rate estimate"
+}

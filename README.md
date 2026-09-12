@@ -8,7 +8,7 @@ A MaleCNS-derived neural controller for a simulated six-joint robot arm and grip
 
 ![Selected successful pickup, hold and scripted drop](docs/media/pickup-hold-drop.gif)
 
-[Watch the recorded run](docs/media/pickup-hold-drop.mp4). This is one selected successful trial; it is not a success-rate summary.
+[Watch the recorded run](docs/media/pickup-hold-drop.mp4). This is a fresh window recording of one selected successful trial, at full speed; it is not a success-rate summary. [Measured hold and release](docs/evidence/demo-run.json).
 
 ## What works today
 
