@@ -1,0 +1,182 @@
+[
+  {
+    "task": {
+      "cube_size_mm": 50,
+      "cube_xy_mm": [
+        370.317503266113,
+        -9.534386331743145
+      ],
+      "cube_yaw_deg": -0.9936338310437498,
+      "friction": 0.9,
+      "hold_seconds": 5,
+      "initial_gripper_mm": 90,
+      "initial_joints_deg": [
+        0,
+        -95,
+        -95,
+        10,
+        0,
+        0
+      ],
+      "input_mode": "state",
+      "lift_clearance_mm": 100,
+      "mass_grams": 50,
+      "placement_jitter_mm": 0,
+      "seed": 100,
+      "stable_angular_deg_s": 10,
+      "stable_linear_mm_s": 15,
+      "tilt_tolerance_deg": 5,
+      "timeout_seconds": 90,
+      "version": 1
+    },
+    "teacher_verified": true,
+    "configuration_key": "8d6f6e9476ad5447f5af62b3db399b3a50c1058ad01de56849470abd85e1f0f8",
+    "source_episode": "episode-021f41a9d0534bad911e59fa7b33261e",
+    "split": "test",
+    "split_id": "2f96e70a9328219665a811e9d9bd8b0b413bde8c0e1663e201890ab32f83b636"
+  },
+  {
+    "task": {
+      "cube_size_mm": 50,
+      "cube_xy_mm": [
+        368.98711692575716,
+        17.691724844819333
+      ],
+      "cube_yaw_deg": -2.295200263914129,
+      "friction": 0.9,
+      "hold_seconds": 5,
+      "initial_gripper_mm": 90,
+      "initial_joints_deg": [
+        0,
+        -95,
+        -95,
+        10,
+        0,
+        0
+      ],
+      "input_mode": "state",
+      "lift_clearance_mm": 100,
+      "mass_grams": 50,
+      "placement_jitter_mm": 0,
+      "seed": 100,
+      "stable_angular_deg_s": 10,
+      "stable_linear_mm_s": 15,
+      "tilt_tolerance_deg": 5,
+      "timeout_seconds": 90,
+      "version": 1
+    },
+    "teacher_verified": true,
+    "configuration_key": "046b68fabab2bdac145eca9cbe5ca9f1f3a8e03a738d122dcab44fd538bf49b4",
+    "source_episode": "episode-32e1034475724c41ba9e3d4ba23cef0a",
+    "split": "test",
+    "split_id": "2f96e70a9328219665a811e9d9bd8b0b413bde8c0e1663e201890ab32f83b636"
+  },
+  {
+    "task": {
+      "cube_size_mm": 50,
+      "cube_xy_mm": [
+        344.23612039035424,
+        -20.186379606824463
+      ],
+      "cube_yaw_deg": 4.558056237042633,
+      "friction": 0.9,
+      "hold_seconds": 5,
+      "initial_gripper_mm": 90,
+      "initial_joints_deg": [
+        0,
+        -95,
+        -95,
+        10,
+        0,
+        0
+      ],
+      "input_mode": "state",
+      "lift_clearance_mm": 100,
+      "mass_grams": 50,
+      "placement_jitter_mm": 0,
+      "seed": 100,
+      "stable_angular_deg_s": 10,
+      "stable_linear_mm_s": 15,
+      "tilt_tolerance_deg": 5,
+      "timeout_seconds": 90,
+      "version": 1
+    },
+    "teacher_verified": true,
+    "configuration_key": "602323cba26af36d82acebd102615fc73837f06ada54adeddde3c8c48f63c339",
+    "source_episode": "episode-8b6b4ea801f94b27a6001216fa7abc71",
+    "split": "test",
+    "split_id": "2f96e70a9328219665a811e9d9bd8b0b413bde8c0e1663e201890ab32f83b636"
+  },
+  {
+    "task": {
+      "cube_size_mm": 50,
+      "cube_xy_mm": [
+        366.74908152510045,
+        4.827701348394364
+      ],
+      "cube_yaw_deg": -2.111367583087964,
+      "friction": 0.9,
+      "hold_seconds": 5,
+      "initial_gripper_mm": 90,
+      "initial_joints_deg": [
+        0,
+        -95,
+        -95,
+        10,
+        0,
+        0
+      ],
+      "input_mode": "state",
+      "lift_clearance_mm": 100,
+      "mass_grams": 50,
+      "placement_jitter_mm": 0,
+      "seed": 100,
+      "stable_angular_deg_s": 10,
+      "stable_linear_mm_s": 15,
+      "tilt_tolerance_deg": 5,
+      "timeout_seconds": 90,
+      "version": 1
+    },
+    "teacher_verified": true,
+    "configuration_key": "bce49b97fa05378cb2c7f75c3ad385a316fcf96c596b028513f44c5d10b46ed2",
+    "source_episode": "episode-d212299a4c8047afb4f1ddf151d13684",
+    "split": "test",
+    "split_id": "2f96e70a9328219665a811e9d9bd8b0b413bde8c0e1663e201890ab32f83b636"
+  },
+  {
+    "task": {
+      "cube_size_mm": 50,
+      "cube_xy_mm": [
+        348.402060989424,
+        -22.697543591166276
+      ],
+      "cube_yaw_deg": 2.677674569014,
+      "friction": 0.9,
+      "hold_seconds": 5,
+      "initial_gripper_mm": 90,
+      "initial_joints_deg": [
+        0,
+        -95,
+        -95,
+        10,
+        0,
+        0
+      ],
+      "input_mode": "state",
+      "lift_clearance_mm": 100,
+      "mass_grams": 50,
+      "placement_jitter_mm": 0,
+      "seed": 100,
+      "stable_angular_deg_s": 10,
+      "stable_linear_mm_s": 15,
+      "tilt_tolerance_deg": 5,
+      "timeout_seconds": 90,
+      "version": 1
+    },
+    "teacher_verified": true,
+    "configuration_key": "15667dddb9e315add877592f1d361f81637aa1028c84dbe473d985936d86bf02",
+    "source_episode": "episode-d3366f95b4e04f7eba1ddcfdf4a0dfc9",
+    "split": "test",
+    "split_id": "2f96e70a9328219665a811e9d9bd8b0b413bde8c0e1663e201890ab32f83b636"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "cube_size_mm": 20,
+  "cube_xy_mm": [
+    350,
+    0
+  ],
+  "cube_yaw_deg": 0,
+  "mass_grams": 50,
+  "friction": 0.9,
+  "lift_clearance_mm": 100,
+  "tilt_tolerance_deg": 5,
+  "hold_seconds": 5,
+  "timeout_seconds": 120,
+  "stable_linear_mm_s": 15,
+  "stable_angular_deg_s": 10,
+  "initial_joints_deg": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "initial_gripper_mm": 0,
+  "input_mode": "state",
+  "seed": 2000,
+  "placement_jitter_mm": 0
+}

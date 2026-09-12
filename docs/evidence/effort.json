@@ -1,0 +1,16 @@
+{
+  "scope": "This Codex thread only; includes prompts, responses and cached context; excludes Grok, other tasks and separate training GPU hours",
+  "as_of": "2026-09-12T22:27:02.234Z",
+  "tokens": {
+    "input_tokens": 339445078,
+    "cached_input_tokens": 330600960,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1762326,
+    "reasoning_output_tokens": 1291049,
+    "total_tokens": 341207404
+  },
+  "completed_turns": 48,
+  "logged_completed_turn_hours_including_tools_and_waits": 31.5881825,
+  "elapsed_calendar_hours": 76.63227305555556,
+  "counter_resets": 4
+}

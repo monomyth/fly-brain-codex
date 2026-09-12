@@ -1,0 +1,34 @@
+# Runtime uses MALECNS_HOME or the global CLI --home option.
+# This file documents the shared layout; it is not an implicit config override.
+status = "implemented"
+
+[paths]
+malecns_home = "/Users/monomyth/code/data/malecns"
+hf_hub_cache = "/Users/monomyth/.cache/huggingface/hub"
+
+[connectome]
+version = "v1.0"
+raw_relative_path = "v1.0"
+derived_relative_path = "prepared"
+graph_id = "53e1d528e43cb834982e9207457da777d4c0d55f570844bb96b049ad043c3f7d"
+annotations = "annotations.feather"
+neurotransmitters = "neurotransmitters.feather"
+edges = "edges.feather"
+
+[policy]
+architecture = "malecns_rate_controller_v1"
+initial_channels_per_neuron = 1
+graph_updates_per_decision = 2
+target_control_hz = 5
+initial_observation_mode = "state"
+initial_training = "behaviour_cloning"
+checkpoint_root_relative_path = "checkpoints/rebot"
+
+[dataset]
+root_relative_path = "datasets/rebot-pick"
+pilot_episodes = 50
+split_unit = "whole_configuration"
+
+[optional_vision]
+download_required = false
+initial_encoder = "per-camera orange component with visibility mask"

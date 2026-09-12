@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "asset_id": "malecns/v1.0/minconf-0.5",
+  "checked_on": "2026-09-09",
+  "status": "downloaded_and_sha256_verified",
+  "source_page": "https://male-cns.janelia.org/download/",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "credit": "Male CNS project: FlyEM/HHMI Janelia, University of Cambridge, MRC LMB, Google Research and collaborators; preserve the dataset citation when importing.",
+  "shared_root_environment_variable": "MALECNS_HOME",
+  "total_bytes": 1109008094,
+  "files": [
+    {
+      "filename": "connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 1051241946,
+      "generation": "1780494887545976",
+      "etag": "\"f30e9dcca25cfd021bf1e7b3d975599e\"",
+      "google_hash": "crc32c=dKRPVQ==",
+      "role": "weighted_connectivity",
+      "destination_relative_path": "v1.0/edges.feather",
+      "content_sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "verification_status": "Complete local file verified by SHA-256; source MD5 also matched during initial audit",
+      "local_filename": "edges.feather"
+    },
+    {
+      "filename": "body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "generation": "1780494878811468",
+      "etag": "\"50a7718770c57220f160ba4f431ab89e\"",
+      "google_hash": "crc32c=vjz9cg==",
+      "role": "neuron_annotations",
+      "destination_relative_path": "v1.0/annotations.feather",
+      "content_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "verification_status": "Complete local file verified by SHA-256; source MD5 also matched during initial audit",
+      "local_filename": "annotations.feather"
+    },
+    {
+      "filename": "body-neurotransmitters-male-cns-v1.0.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "generation": "1780894899156750",
+      "etag": "\"3d842b12fe5c49eefade528d7dd24a1f\"",
+      "google_hash": "crc32c=jcpNFg==",
+      "role": "neurotransmitter_predictions",
+      "destination_relative_path": "v1.0/neurotransmitters.feather",
+      "content_sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "verification_status": "Complete local file verified by SHA-256; source MD5 also matched during initial audit",
+      "local_filename": "neurotransmitters.feather"
+    }
+  ],
+  "optional_vision_model": {
+    "required": false,
+    "id": "torchvision/resnet18/IMAGENET1K_V1",
+    "source_page": "https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.resnet18.html",
+    "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+    "cache": "TORCH_HOME/hub/checkpoints",
+    "sha256_prefix_from_upstream_filename": "f37072fd",
+    "downloaded": false
+  },
+  "shared_root": "/Users/monomyth/code/data/malecns"
+}

@@ -1,0 +1,5 @@
+[
+  {"cube_xy_mm": [350, 0], "cube_size_mm": 50, "cube_yaw_deg": 0, "input_mode": "state", "hold_seconds": 5, "timeout_seconds": 60},
+  {"cube_xy_mm": [340, -20], "cube_size_mm": 50, "cube_yaw_deg": 0, "input_mode": "state", "hold_seconds": 5, "timeout_seconds": 60},
+  {"cube_xy_mm": [360, 20], "cube_size_mm": 50, "cube_yaw_deg": 0, "input_mode": "state", "hold_seconds": 5, "timeout_seconds": 60}
+]

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "malecns-rebot"
+version = "0.1.0"
+description = "Reusable MaleCNS graph controller and ReBot simulation training pipeline"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+  "numpy==2.5.3", "scipy==1.18.1", "pyarrow==25.0.1",
+  "torch==2.14.0", "safetensors==0.8.0", "pillow==12.3.0",
+]
+
+[project.optional-dependencies]
+ui = ["mlx==0.32.2; sys_platform == 'darwin' and platform_machine == 'arm64'"]
+test = ["pytest==9.1.1"]
+
+[project.scripts]
+fly-brain = "fly_brain.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.setuptools.package-data]
+fly_brain = ["robot_kinematics.json"]

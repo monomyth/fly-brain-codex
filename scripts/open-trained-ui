@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+runtime_python="$project_dir/.venv-mlx/bin/python"
+if [ ! -x "$runtime_python" ]; then runtime_python="$project_dir/.venv/bin/python"; fi
+exec "$runtime_python" "$project_dir/scripts/open_trained_ui.py" "$@"

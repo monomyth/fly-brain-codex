@@ -1,0 +1,1848 @@
+{
+  "attempts": 20,
+  "successes": 19,
+  "startup_failures": 0,
+  "interrupted_attempts": 0,
+  "learning_enabled": false,
+  "metric": "pickup and native hold",
+  "episodes": [
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          350,
+          0
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73000,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 35,
+        "angular_speed_deg_s": 1.0244104393860658,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 124.31141090195297,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.5593861937522888,
+          "finger_right_link": 0.5589585304260254
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            357.1001887321472,
+            -1.76648807246238,
+            133.8157057762146
+          ],
+          "quaternion_xyzw": [
+            -0.004483766120878839,
+            -0.021134937658959067,
+            0.004145645386909118,
+            0.9997579826517272
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "631C727C-A4F7-4909-90BC-016FC5A46529",
+        "error": null,
+        "frame_id": 1054,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0.1517540681752034,
+        "observations": 71,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1089,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 154.06327688118168,
+          "linear_speed_mm_s": 26.16564743220806
+        },
+        "success": true,
+        "task_time": 17.266667567193508,
+        "tilt_deg": 2.475979679186593,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 18.21619679167634
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          350,
+          0
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73001,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 36,
+        "angular_speed_deg_s": 0.14249039863738855,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 124.93233846308608,
+        "contact_impulse_Ns": {
+          "finger_left_link": 1.0689617395401,
+          "finger_right_link": 1.071187973022461
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            358.22391510009766,
+            -1.8660819623619318,
+            134.3325525522232
+          ],
+          "quaternion_xyzw": [
+            -0.0006772688313894313,
+            -0.019619672257440296,
+            0.005456929569881117,
+            0.9997923942934903
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "74F129E0-3B76-45FC-BB09-48D3C9698081",
+        "error": null,
+        "frame_id": 1035,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 1.489686561834139,
+        "observations": 73,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1119,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 216.15746919187308,
+          "linear_speed_mm_s": 65.93215465545654
+        },
+        "success": true,
+        "task_time": 17.950000936165452,
+        "tilt_deg": 2.249732484589708,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 18.71986758330604
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          350,
+          0
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73002,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 60,
+        "angular_speed_deg_s": 0.1836560848210189,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 124.85322686474673,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.7806186676025391,
+          "finger_right_link": 0.7807592153549194
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            359.34925079345703,
+            -1.7096118535846472,
+            134.46876406669617
+          ],
+          "quaternion_xyzw": [
+            0.0004636439438637281,
+            -0.0313719201924079,
+            0.0018946707733474078,
+            0.9995058768613594
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "3FD6DE6D-D25C-4FFE-A03E-7D9BCFB1D811",
+        "error": null,
+        "frame_id": 1691,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0.5870384303002597,
+        "observations": 121,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1840,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 420.91977862157705,
+          "linear_speed_mm_s": 66.57397747039795
+        },
+        "success": true,
+        "task_time": 29.6000015437603,
+        "tilt_deg": 3.595939969355843,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 30.730136208352633
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          350,
+          0
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73003,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 36,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 125.3319338257951,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.36591774225234985,
+          "finger_right_link": 0.3655374348163605
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            358.3613336086273,
+            -1.5083117177709937,
+            134.76991653442383
+          ],
+          "quaternion_xyzw": [
+            -0.004704025482031242,
+            -0.017477032640936824,
+            0.0038715526257844814,
+            0.9998287036060717
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "B753AC81-5128-4EEF-82B2-75D22659F8B6",
+        "error": null,
+        "frame_id": 1017,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0,
+        "observations": 73,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1112,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 80.2384873879927,
+          "linear_speed_mm_s": 25.09997971355915
+        },
+        "success": true,
+        "task_time": 17.516667580232024,
+        "tilt_deg": 2.074108168897209,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 18.602332375012338
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          343,
+          -10
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73004,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 38,
+        "angular_speed_deg_s": 1.4273913378427716,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 121.36248666386898,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.6758177876472473,
+          "finger_right_link": 0.6764662861824036
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            352.70020365715027,
+            -0.8745394297875464,
+            130.80713152885437
+          ],
+          "quaternion_xyzw": [
+            0.0036886349092261905,
+            -0.019094516170797122,
+            0.010843440878872903,
+            0.9997520758741218
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "FA28C07A-A9FC-4592-8101-BF6E6C5989FC",
+        "error": null,
+        "frame_id": 1095,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0.2944001580651603,
+        "observations": 77,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1180,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 274.62330109091357,
+          "linear_speed_mm_s": 44.222284108400345
+        },
+        "success": true,
+        "task_time": 18.800000980496407,
+        "tilt_deg": 2.2286637278876413,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 19.739750208333135
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          343,
+          -4
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73005,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 51,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 123.28887251326978,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.9674954414367676,
+          "finger_right_link": 0.968130350112915
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            349.42692518234253,
+            -1.1417076457291842,
+            132.623553276062
+          ],
+          "quaternion_xyzw": [
+            0.004475959841459635,
+            -0.012490101379862036,
+            0.006751333441688814,
+            0.9998891851839271
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "6A15AEC9-DAD1-4D6C-AE7A-2BCEA39D0F23",
+        "error": null,
+        "frame_id": 1445,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0,
+        "observations": 103,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1575,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 371.96273117935317,
+          "linear_speed_mm_s": 70.36349922418594
+        },
+        "success": true,
+        "task_time": 25.08333464153111,
+        "tilt_deg": 1.5204325688719524,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 26.332331541692838
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          343,
+          2
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73006,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 35,
+        "angular_speed_deg_s": 0.045742701528729224,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 122.12382733582227,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.6530014276504517,
+          "finger_right_link": 0.65290766954422
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            350.7010340690613,
+            -0.47391283442266285,
+            131.26546144485474
+          ],
+          "quaternion_xyzw": [
+            0.0026169863464051996,
+            -0.004506104021092217,
+            0.0073794563251507635,
+            0.9999591941841223
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "CF41004E-3667-4B31-AA4F-69A92B02756F",
+        "error": null,
+        "frame_id": 1008,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0.723650348501246,
+        "observations": 71,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1083,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 669.5899454703297,
+          "linear_speed_mm_s": 65.59950858354568
+        },
+        "success": true,
+        "task_time": 16.916667548939586,
+        "tilt_deg": 0.5971290907332769,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 18.12215895828558
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          343,
+          8
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73007,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 35,
+        "angular_speed_deg_s": 0.13911218137318793,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 125.65059026296596,
+        "contact_impulse_Ns": {
+          "finger_left_link": 1.1212002038955688,
+          "finger_right_link": 1.1215128898620605
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            355.27077317237854,
+            -0.52969268290326,
+            135.24863123893738
+          ],
+          "quaternion_xyzw": [
+            0.003948351895135367,
+            0.026571365500726928,
+            0.00509964161121138,
+            0.999626113458515
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "2BA05313-A038-4D62-AF4C-F48F11AF5CF8",
+        "error": null,
+        "frame_id": 1045,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0.2822919958273877,
+        "observations": 71,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1134,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 580.0704809249077,
+          "linear_speed_mm_s": 158.15602242946625
+        },
+        "success": true,
+        "task_time": 17.700000923126936,
+        "tilt_deg": 3.0786565769586045,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 18.98356037499616
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          347,
+          -10
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73008,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 40,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 125.03470774781303,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.6886039972305298,
+          "finger_right_link": 0.6347979307174683
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            354.3788492679596,
+            -2.579866209998727,
+            134.49937105178833
+          ],
+          "quaternion_xyzw": [
+            0.0009831473673978396,
+            -0.0229620213305187,
+            0.0080387912503418,
+            0.9997035344705469
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "292D248B-5252-4C30-A51A-79A2C91ED692",
+        "error": null,
+        "frame_id": 1088,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0,
+        "observations": 81,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1263,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 129.019828213818,
+          "linear_speed_mm_s": 37.807755172252655
+        },
+        "success": true,
+        "task_time": 19.833334367722273,
+        "tilt_deg": 2.6338964799401126,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 21.145177958300337
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          347,
+          -4
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73009,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 32,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 124.16841552177554,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.6891071796417236,
+          "finger_right_link": 0.6894324421882629
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            357.36793279647827,
+            -0.9724252158775926,
+            133.723184466362
+          ],
+          "quaternion_xyzw": [
+            -0.007618392045996377,
+            -0.02053276638829062,
+            0.005740822762618883,
+            0.9997436714283745
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "C365FADD-E5F4-469D-A70D-F2BBB3035233",
+        "error": null,
+        "frame_id": 972,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.016666928306222,
+        "linear_speed_mm_s": 0,
+        "observations": 65,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1040,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 552.0499850247672,
+          "linear_speed_mm_s": 110.63901335000992
+        },
+        "success": true,
+        "task_time": 16.283334182575345,
+        "tilt_deg": 2.5098196196458673,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 17.410763250023592
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          347,
+          2
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73010,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 33,
+        "angular_speed_deg_s": 0.4710499534866282,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 123.28995834941986,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.378608375787735,
+          "finger_right_link": 0.37813660502433777
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            358.3214282989502,
+            -0.9228007984347641,
+            132.7286958694458
+          ],
+          "quaternion_xyzw": [
+            -0.004947436385623685,
+            -0.0173027138710711,
+            0.0011496913942159862,
+            0.9998373953676689
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "0F6B4810-4D8C-40BA-8507-B61882E019CB",
+        "error": null,
+        "frame_id": 940,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 1.8768683374994004,
+        "observations": 67,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1047,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 246.39183430768978,
+          "linear_speed_mm_s": 52.277300506830215
+        },
+        "success": true,
+        "task_time": 16.483334193006158,
+        "tilt_deg": 2.0623170003810403,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 17.47088791668648
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          347,
+          8
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73011,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 38,
+        "angular_speed_deg_s": 0.3871373052465885,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 125.23528141516574,
+        "contact_impulse_Ns": {
+          "finger_left_link": 1.2487670183181763,
+          "finger_right_link": 1.247654914855957
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            352.4667024612427,
+            -1.734089688397944,
+            134.6469223499298
+          ],
+          "quaternion_xyzw": [
+            -0.0008788565947753346,
+            -0.01995750122826435,
+            0.007839213569460884,
+            0.9997697097264059
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "23133AD5-FEA1-4B26-ACF5-131E67CF39ED",
+        "error": null,
+        "frame_id": 1074,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 1.3915020209241906,
+        "observations": 77,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1188,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 439.85940141640214,
+          "linear_speed_mm_s": 37.23670542240143
+        },
+        "success": true,
+        "task_time": 18.56666763499379,
+        "tilt_deg": 2.289329835195406,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 19.858711958338972
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          353,
+          -10
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73012,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 45,
+        "angular_speed_deg_s": 0.13275920438877362,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 123.15326747659567,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.41049426794052124,
+          "finger_right_link": 0.41047433018684387
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            357.9370677471161,
+            -0.34092392888851464,
+            132.56055116653442
+          ],
+          "quaternion_xyzw": [
+            -9.517752221539814e-05,
+            -0.020521006822410287,
+            0.008529022948455853,
+            0.9997530369985272
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "6CE5F5FB-EAB5-43BE-97C5-A5AF7F304A34",
+        "error": null,
+        "frame_id": 931,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0.513604292936261,
+        "observations": 91,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1584,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 246.5275091853629,
+          "linear_speed_mm_s": 33.02755579352379
+        },
+        "success": true,
+        "task_time": 25.53333466500044,
+        "tilt_deg": 2.35172453669924,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 33.4523578750086
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": false,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          353,
+          -4
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73013,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 146,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 0.00041407270083299724,
+        "contact_impulse_Ns": {
+          "floor": 0.0012252279557287693
+        },
+        "contacts": [
+          "floor"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            305.51260709762573,
+            -6.697645410895348,
+            9.000509046018124
+          ],
+          "quaternion_xyzw": [
+            -4.397878686226458e-06,
+            -4.994151910567889e-07,
+            0.03724799720194247,
+            0.9993060525609024
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": true,
+        "episode_id": "B019C2B2-4C2A-4E12-AB62-2CE647A25BD0",
+        "error": null,
+        "frame_id": 3343,
+        "grasp_mode": "contact_friction",
+        "held": false,
+        "hold_seconds": 0,
+        "linear_speed_mm_s": 0,
+        "observations": 293,
+        "owner": "malecns",
+        "phase": "running",
+        "physics_steps": 5175,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 0.006046596301117367,
+          "linear_speed_mm_s": 0.001499267796134518
+        },
+        "success": false,
+        "task_time": 85.33333778381348,
+        "tilt_deg": 0.0005072004729558027,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 106.59332445834298
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          353,
+          2
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73014,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 34,
+        "angular_speed_deg_s": 0.029340920896167674,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 123.42123544026957,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.637505829334259,
+          "finger_right_link": 0.6381022334098816
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            348.0120003223419,
+            -0.2719990734476596,
+            132.92573392391205
+          ],
+          "quaternion_xyzw": [
+            0.010311297786219758,
+            0.01521850446098315,
+            0.007770728051715107,
+            0.9998008251874376
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "54A33C6B-F514-4D65-BD5C-730194C76ABA",
+        "error": null,
+        "frame_id": 1105,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0.9774212336483608,
+        "observations": 69,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1181,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 388.70609298618234,
+          "linear_speed_mm_s": 52.07904428243637
+        },
+        "success": true,
+        "task_time": 16.583334198221564,
+        "tilt_deg": 2.1066273961578084,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 19.753965041658375
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          353,
+          8
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73015,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 35,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 126.2842326899099,
+        "contact_impulse_Ns": {
+          "finger_left_link": 2.1175897121429443,
+          "finger_right_link": 2.1646475791931152
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            346.83069586753845,
+            -0.051726994570344687,
+            135.4394257068634
+          ],
+          "quaternion_xyzw": [
+            -0.0011491975642036138,
+            -0.006600869341022172,
+            0.010096921909575281,
+            0.9999265773229818
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "3CAAC516-95E3-42CF-B6D2-C31B12CC7790",
+        "error": null,
+        "frame_id": 1025,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0,
+        "observations": 71,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1091,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 701.0634571657483,
+          "linear_speed_mm_s": 134.54997539520264
+        },
+        "success": true,
+        "task_time": 17.266667567193508,
+        "tilt_deg": 0.767787414257392,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 18.275752333342098
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          357,
+          -10
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73016,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 63,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 119.03058527789734,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.3831983804702759,
+          "finger_right_link": 0.3898887634277344
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            351.4384329319,
+            0.3698937071021646,
+            128.58475744724274
+          ],
+          "quaternion_xyzw": [
+            0.0021469087642573864,
+            -0.026169038350434305,
+            -0.0038322882064816834,
+            0.9996478808969056
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "7BED2126-55F3-4A0E-8F1A-FC40E1489508",
+        "error": null,
+        "frame_id": 1758,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0,
+        "observations": 127,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1930,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 335.58375030127456,
+          "linear_speed_mm_s": 60.584403574466705
+        },
+        "success": true,
+        "task_time": 31.416668305173516,
+        "tilt_deg": 3.0091714612753266,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 33.24028466671007
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          357,
+          -4
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73017,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 37,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 119.19362597165453,
+        "contact_impulse_Ns": {
+          "finger_left_link": 0.3622888922691345,
+          "finger_right_link": 0.36234450340270996
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            356.2881648540497,
+            0.665223749820143,
+            128.66444885730743
+          ],
+          "quaternion_xyzw": [
+            0.004134812196411165,
+            -0.019958599672067406,
+            0.008278310717670902,
+            0.9997579843136499
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "57C20601-D5A7-44C1-9FC1-F365A7A0C7E2",
+        "error": null,
+        "frame_id": 815,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 0,
+        "observations": 75,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1252,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 260.4397029397084,
+          "linear_speed_mm_s": 41.69786348938942
+        },
+        "success": true,
+        "task_time": 20.133334383368492,
+        "tilt_deg": 2.335813146367691,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 25.699784874974284
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          357,
+          2
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73018,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 36,
+        "angular_speed_deg_s": 0,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 118.99988360948491,
+        "contact_impulse_Ns": {
+          "finger_left_link": 1.0943503379821777,
+          "finger_right_link": 1.0940884351730347
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            354.9918532371521,
+            1.1192846577614546,
+            128.76008450984955
+          ],
+          "quaternion_xyzw": [
+            0.004060375272070808,
+            -0.035485012357288515,
+            0.007425618043636034,
+            0.9993343721934731
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "AECD1A19-C0F6-4E24-87C0-9917BF9F2010",
+        "error": null,
+        "frame_id": 669,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.016666928306222,
+        "linear_speed_mm_s": 0,
+        "observations": 73,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1252,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 649.7661137063113,
+          "linear_speed_mm_s": 150.58237314224243
+        },
+        "success": true,
+        "task_time": 19.61666768975556,
+        "tilt_deg": 4.09368712192402,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 26.343546041694935
+      },
+      "error": null,
+      "release": null
+    },
+    {
+      "episode": null,
+      "success": true,
+      "trial_started": true,
+      "task_for_evaluator_only": {
+        "cube_size_mm": 20,
+        "cube_xy_mm": [
+          357,
+          8
+        ],
+        "cube_yaw_deg": 0,
+        "friction": 0.9,
+        "hold_seconds": 5,
+        "initial_gripper_mm": 0,
+        "initial_joints_deg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "input_mode": "vision",
+        "lift_clearance_mm": 100,
+        "mass_grams": 50,
+        "placement_jitter_mm": 0,
+        "seed": 73019,
+        "stable_angular_deg_s": 10,
+        "stable_linear_mm_s": 15,
+        "tilt_tolerance_deg": 5,
+        "timeout_seconds": 180,
+        "version": 1
+      },
+      "final_evaluation": {
+        "actions": 41,
+        "angular_speed_deg_s": 0.666535227237392,
+        "backend": "RealityKit dynamic cube / kinematic robot",
+        "capture_in_progress": false,
+        "clearance_mm": 128.31789302556635,
+        "contact_impulse_Ns": {
+          "finger_left_link": 1.2408795356750488,
+          "finger_right_link": 1.241287350654602
+        },
+        "contacts": [
+          "finger_left_link",
+          "finger_right_link"
+        ],
+        "cube_collider_size_mm": [
+          20,
+          20,
+          20
+        ],
+        "cube_pose": {
+          "position_mm": [
+            354.34266924858093,
+            -2.541857771575451,
+            137.68823444843292
+          ],
+          "quaternion_xyzw": [
+            -0.0005546966789914401,
+            -0.018196144961101203,
+            0.005728095207063031,
+            0.9998178741878182
+          ]
+        },
+        "cube_size_mm": 20,
+        "dropped": false,
+        "episode_id": "C588BC83-3971-4232-B149-FBB12FDA5A88",
+        "error": null,
+        "frame_id": 587,
+        "grasp_mode": "contact_friction",
+        "held": true,
+        "hold_seconds": 5.000000260770321,
+        "linear_speed_mm_s": 3.387057190139722,
+        "observations": 83,
+        "owner": "malecns",
+        "phase": "completed",
+        "physics_steps": 1502,
+        "recording": false,
+        "solver_velocities": {
+          "angular_speed_deg_s": 406.6944889956781,
+          "linear_speed_mm_s": 53.94882336258888
+        },
+        "success": true,
+        "task_time": 23.81666790880263,
+        "tilt_deg": 2.086208481178182,
+        "velocity_measurement": "finite differences of post-physics cube poses",
+        "wall_seconds": 34.652645999973174
+      },
+      "error": null,
+      "release": null
+    }
+  ]
+}

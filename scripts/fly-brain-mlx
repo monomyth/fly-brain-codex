@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+export OMP_NUM_THREADS=2
+export VECLIB_MAXIMUM_THREADS=2
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+runtime_python="$project_dir/.venv-mlx/bin/python"
+if [ ! -x "$runtime_python" ]; then runtime_python="$project_dir/.venv/bin/python"; fi
+exec "$runtime_python" "$project_dir/scripts/run_mlx_ui.py" "$@"
