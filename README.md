@@ -4,11 +4,11 @@ A MaleCNS-derived neural controller for a simulated six-joint robot arm and grip
 
 **An anatomical wiring map became an engineered controller. This is not a pretrained fly brain, a biologically validated simulation, or a generally reliable robot policy.**
 
-[Download models on Hugging Face](https://huggingface.co/monomyth/fly-brain-codex) · [Native simulator branch](https://github.com/monomyth/rebot-motion-lab/tree/fly-brain-codex) · [Results and limits](docs/results.md)
+[Watch the narrated demo reel](docs/demo-reel.md) · [Download models on Hugging Face](https://huggingface.co/monomyth/fly-brain-codex) · [Native simulator branch](https://github.com/monomyth/rebot-motion-lab/tree/fly-brain-codex) · [Results and limits](docs/results.md)
 
 ![Selected successful pickup, hold and scripted drop](docs/media/pickup-hold-drop.gif)
 
-[Watch the recorded run](docs/media/pickup-hold-drop.mp4). This is a fresh window recording of one selected successful trial, at full speed; it is not a success-rate summary. [Measured hold and release](docs/evidence/demo-run.json).
+[Watch the recorded run](docs/media/pickup-hold-drop.mp4). This is a fresh Orbit-view window recording of one selected successful trial, at full speed; it is not a success-rate summary. [Measured hold and release](docs/evidence/demo-run.json).
 
 ## What works today
 

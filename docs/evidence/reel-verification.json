@@ -1,0 +1,56 @@
+{
+  "native_mcp": "Blackmagic ResolveMCP",
+  "resolve": "21.1.0.14",
+  "timeline": "Fly Brain Codex \u2014 Styled final",
+  "video_frames": 2244,
+  "fps": 30,
+  "video_seconds": 74.8,
+  "size": [
+    1080,
+    1920
+  ],
+  "audio_sample_rate": 48000,
+  "audio_channels": 2,
+  "lufs_integrated": -15.0,
+  "true_peak_dbfs": -1.4,
+  "visual_dissolves": 7,
+  "generated_voice_lines": 9,
+  "edited_voice_clips": 12,
+  "styled_subtitle_cues": 25,
+  "captions_burned_in": true,
+  "voice": "ElevenLabs stock Liam",
+  "spectator_camera": "Orbit",
+  "actor_cameras": [
+    "Front",
+    "Gripper"
+  ],
+  "narration_status": "complete",
+  "camera_panels": {
+    "image_size": [
+      576,
+      360
+    ],
+    "identical_left_x": 252,
+    "boxes_equal_size": [
+      940,
+      425
+    ]
+  },
+  "hold_voice_start_seconds": 34.1,
+  "grip_voice_start_seconds": 30.742,
+  "lift_voice_start_seconds": 32.528,
+  "release_sentence_start_seconds": 38.2,
+  "spoken_opens_approx_seconds": 39.626,
+  "inspected_visible_release_seconds": [
+    39,
+    40
+  ],
+  "visually_checked": [
+    "camera panels",
+    "all subtitle styles",
+    "grip and lift cues",
+    "hold and release cues",
+    "outro"
+  ],
+  "sha256": "72d46eef387218b721af60576f60a313e67866a7d8bf71e4fde746c05d46ba61"
+}

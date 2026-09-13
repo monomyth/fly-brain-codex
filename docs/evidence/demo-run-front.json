@@ -9,8 +9,8 @@
   "initial_pose": "folded",
   "success": true,
   "hold_seconds": 5.000000260770321,
-  "clearance_mm": 125.33278088656039,
-  "tilt_deg": 2.240917916446596,
+  "clearance_mm": 124.49308217693414,
+  "tilt_deg": 0.8983151473640719,
   "release_success": true,
   "release_source": "task_completion_open_gripper",
   "capture": "macOS screencapture, simulator window only",
@@ -19,7 +19,5 @@
     34
   ],
   "preview_speed": 1.0,
-  "note": "A selected successful live UI run; not a success-rate estimate",
-  "camera": "Orbit",
-  "filming_evidence": "orbit-filming.json"
+  "note": "A selected successful live UI run; not a success-rate estimate"
 }

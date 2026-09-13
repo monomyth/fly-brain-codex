@@ -1,0 +1,45 @@
+{
+  "note": "Convenience filming takes used to adjust spectator framing, not a planned independent qualification or a new success-rate claim. All used the retained baseline; actor cameras stayed Front and Gripper.",
+  "takes": [
+    {
+      "take": "orbit-capture",
+      "selected_for_reel": false,
+      "success": true,
+      "hold_seconds": 5.000000260770321,
+      "clearance_mm": 129.07055826795255,
+      "tilt_deg": 1.9848338557663232,
+      "release_verified": true,
+      "error": null
+    },
+    {
+      "take": "orbit-capture-final",
+      "selected_for_reel": true,
+      "success": true,
+      "hold_seconds": 5.000000260770321,
+      "clearance_mm": 125.33278088656039,
+      "tilt_deg": 2.240917916446596,
+      "release_verified": true,
+      "error": null
+    },
+    {
+      "take": "orbit-capture-delivery",
+      "selected_for_reel": false,
+      "success": false,
+      "hold_seconds": 0,
+      "clearance_mm": 124.2160007472552,
+      "tilt_deg": 7.677216442003014,
+      "release_verified": false,
+      "error": null
+    },
+    {
+      "take": "orbit-capture-delivery-2",
+      "selected_for_reel": false,
+      "success": false,
+      "hold_seconds": 0,
+      "clearance_mm": 145.9517755003559,
+      "tilt_deg": 26.51662062857476,
+      "release_verified": false,
+      "error": null
+    }
+  ]
+}
