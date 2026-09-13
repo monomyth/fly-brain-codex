@@ -25,6 +25,6 @@ After the native evaluator confirms the five-second hold, the runner keeps the a
 
 These are experimental results over a small workspace, not evidence of reliable pickup at every floor position or cube size. Larger sideways moves, including Y≈58 mm, have failed. Wider-position retraining is in progress; the current selected checkpoint remains the older baseline.
 
-The optional `scripts/open-trained-ui` launcher remains available for a separate managed window. Normal application startup reads `configs/trained-runtime.json` and preserves explicitly selected checkpoints. All generated models, data and reports remain under the local or Blacktower Codex fly-brain project directories.
+The optional `scripts/open-trained-ui` launcher remains available for a separate managed window. Normal application startup reads `configs/trained-runtime.json` and preserves explicitly selected checkpoints. All generated models, data and reports remain under the local or NVIDIA GPU host Codex fly-brain project directories.
 
 Evidence: `reports/retain-grasp-20260911/UI_DEPLOYMENT.json`, `control-replay.html`, `ui-live.png`, and `final-tests.log`.

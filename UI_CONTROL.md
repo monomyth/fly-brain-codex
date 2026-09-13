@@ -1,7 +1,7 @@
 # Run the fly-brain controller from the simulator
 
 Open the rebuilt `ReBot Motion Lab Codex.app` in
-`/Users/monomyth/github/rebot-motion-lab-codex/dist/`.
+`$HOME/github/rebot-motion-lab-codex/dist/`.
 
 1. In **Cube pickup experiment**, choose **Set up cube** if needed.
 2. Set **Cube X mm**, **Cube Y mm**, **Cube side mm**, and yaw, then choose **Apply cube**. Alternatively choose **Place with mouse** and click the floor.

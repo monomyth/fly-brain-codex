@@ -2,12 +2,12 @@
 
 # MaleCNS robot-arm control: implementation and training plan
 
-> Implementation update (2026-09-09): this is the historical design plan. The implemented shared root is `/Users/monomyth/code/data/malecns`, replacing the proposed `~/Models` layout below. See `README.md` for current commands and `IMPLEMENTATION_REPORT.md` for measured results. Software and initial experiments are delivered; autonomous pickup is not yet qualified.
+> Implementation update (2026-09-09): this is the historical design plan. The implemented shared root is `$HOME/code/data/malecns`, replacing the proposed `~/Models` layout below. See `README.md` for current commands and `IMPLEMENTATION_REPORT.md` for measured results. Software and initial experiments are delivered; autonomous pickup is not yet qualified.
 
 Prepared 2026-09-09. Status: proposed work, not an implemented or trained neural controller. Only public download headers were fetched; no connectome tables or model weights were downloaded.
 
-Code project: `/Users/monomyth/code/codex/fly-brain`.
-Simulator: `/Users/monomyth/github/rebot-motion-lab-codex`, using MCP server `rebot-motion-lab-codex`.
+Code project: `$HOME/code/codex/fly-brain`.
+Simulator: `$HOME/github/rebot-motion-lab-codex`, using MCP server `rebot-motion-lab-codex`.
 
 ## Recommended approach
 
@@ -61,10 +61,10 @@ MaleCNS is published under CC BY 4.0. Keep its attribution, license link, and de
 
 ## 3. Shared storage across projects
 
-Use a durable shared root outside every repository. Proposed new root: **`/Users/monomyth/Models`**. This directory has not been created by this planning task.
+Use a durable shared root outside every repository. Proposed new root: **`$HOME/Models`**. This directory has not been created by this planning task.
 
 ```text
-/Users/monomyth/Models/
+$HOME/Models/
   connectomes/
     malecns/v1.0/
       raw/                         # original three files, immutable
@@ -84,7 +84,7 @@ Use a durable shared root outside every repository. Proposed new root: **`/Users
   torch/                           # optional Torchvision/Hub downloads
 ```
 
-The existing **`/Users/monomyth/.cache/huggingface/hub`** should remain the shared cache for Hugging Face models. Cache directories for CLIP variants exist, but their completeness and suitability have not been verified. Inspect existing snapshots before considering a new download.
+The existing **`$HOME/.cache/huggingface/hub`** should remain the shared cache for Hugging Face models. Cache directories for CLIP variants exist, but their completeness and suitability have not been verified. Inspect existing snapshots before considering a new download.
 
 Set cache paths in project launch configuration, before importing the relevant libraries:
 

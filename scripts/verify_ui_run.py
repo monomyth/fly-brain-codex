@@ -19,7 +19,7 @@ while time.monotonic()<deadline:
     state=client.call('rebot_get_state');brain=state['brain_activity'];runner=state['fly_brain']
     if runner['running'] and brain.get('episode_id') and brain.get('maximum_activity') is not None and not captured:
         write_json(report/'ui-live-state.json',{'brain_activity':brain,'fly_brain':runner,'window':state['window'],'experiment':state['experiment']})
-        subprocess.run(['/Users/monomyth/.codex/skills/xcode-debug/scripts/capture_app_window.sh','--app-name','ReBot Motion Lab Codex','--window-title','B601-DM Simulator - Codex','--output',str(report/'ui-live.png')],check=True)
+        subprocess.run([str(Path.home()/'.codex/skills/xcode-debug/scripts/capture_app_window.sh'),'--app-name','ReBot Motion Lab Codex','--window-title','B601-DM Simulator - Codex','--output',str(report/'ui-live.png')],check=True)
         captured=True;print('Captured active brain UI',flush=True)
     if not runner['running']:
         result=Path(runner['result_directory']);evaluation=json.loads((result/'evaluation.json').read_text())

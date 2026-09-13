@@ -8,14 +8,14 @@ The previous simulator-state controller remains available separately.
 
 ## Run in the UI
 
-Open `/Users/monomyth/github/rebot-motion-lab-codex/dist/ReBot Motion Lab Codex.app`.
+Open `$HOME/github/rebot-motion-lab-codex/dist/ReBot Motion Lab Codex.app`.
 
 1. Use **Load task…** and select
-   `/Users/monomyth/code/codex/fly-brain/configs/retinal-cube20-response.json`.
+   `$HOME/code/codex/fly-brain/configs/retinal-cube20-response.json`.
    This places a 20 mm cube at X=350, Y=12 mm and starts the arm folded, gripper closed.
 2. Use **Choose model…** and select:
 
-   `/Users/monomyth/code/codex/fly-brain/data/checkpoints/rebot/retinal-response-final-20260910-140300/seed-0`
+   `$HOME/code/codex/fly-brain/data/checkpoints/rebot/retinal-response-final-20260910-140300/seed-0`
 
 3. Leave **Learn from reward** off for a deterministic test. Click **Run fly brain**.
    Expect one small base turn. The brain overlay displays computed neuron activity
@@ -36,10 +36,10 @@ and does not exercise this task. A one-degree response is intentionally small.
 ## Terminal
 
 ```sh
-cd /Users/monomyth/code/codex/fly-brain
-export MALECNS_HOME=/Users/monomyth/code/codex/fly-brain/data
+cd $HOME/code/codex/fly-brain
+export MALECNS_HOME=$HOME/code/codex/fly-brain/data
 .venv/bin/fly-brain visual-run \
-  --checkpoint "/Users/monomyth/code/codex/fly-brain/data/checkpoints/rebot/retinal-response-final-20260910-140300/seed-0" \
+  --checkpoint "$HOME/code/codex/fly-brain/data/checkpoints/rebot/retinal-response-final-20260910-140300/seed-0" \
   --episodes 2 \
   --output "$MALECNS_HOME/runs/retinal-response-$(date +%Y%m%d-%H%M%S)"
 ```
@@ -110,8 +110,8 @@ No additional model download is needed. Existing shared MaleCNS files and soma
 geometry are reused. Keep the Mac unlocked and awake for native physics.
 
 ```sh
-cd /Users/monomyth/code/codex/fly-brain
-export MALECNS_HOME=/Users/monomyth/code/codex/fly-brain/data
+cd $HOME/code/codex/fly-brain
+export MALECNS_HOME=$HOME/code/codex/fly-brain/data
 STAMP=$(date +%Y%m%d-%H%M%S)
 DATASET="$MALECNS_HOME/datasets/visual-dopamine/response-$STAMP"
 MODELS="$MALECNS_HOME/checkpoints/rebot/retinal-response-$STAMP"
@@ -157,7 +157,7 @@ are in shared `circuits/CIRCUIT_ID/neurons.json` and `populations.npz`.
 
 ## Share with another project
 
-Set `MALECNS_HOME=/Users/monomyth/code/codex/fly-brain/data` and install this Python package
+Set `MALECNS_HOME=$HOME/code/codex/fly-brain/data` and install this Python package
 in that project's environment. Load
 `fly_brain.visual_dopamine.policy.VisualDopaminePolicy(checkpoint, root)`.
 All large assets stay in shared storage. This robot's camera/motor registration

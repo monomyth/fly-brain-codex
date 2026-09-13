@@ -13,8 +13,8 @@ The same overlay works with `fly-brain run` and `evaluate`, including a connecte
 **No additional downloads or training are required.** The existing annotations contain soma locations. Derived geometry is generated automatically when running a MaleCNS evaluation, or can be prepared ahead of time:
 
 ```sh
-cd /Users/monomyth/code/codex/fly-brain
-.venv/bin/fly-brain --home /Users/monomyth/code/data/malecns prepare-overlay
+cd $HOME/code/codex/fly-brain
+.venv/bin/fly-brain --home $HOME/code/data/malecns prepare-overlay
 ```
 
 For a different graph, add `--graph-id GRAPH_ID`. The shared cache is `MALECNS_HOME/visualizations/GRAPH_ID/soma-v1/`, outside both source repositories. It contains normalized 3D positions, the exact corresponding body IDs and controller indices, checksums, transformation metadata, and CC BY 4.0 attribution. Other projects can reuse it. Original graph files and checkpoints are unchanged.

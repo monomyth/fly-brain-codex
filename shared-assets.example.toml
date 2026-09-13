@@ -3,8 +3,8 @@
 status = "implemented"
 
 [paths]
-malecns_home = "/Users/monomyth/code/data/malecns"
-hf_hub_cache = "/Users/monomyth/.cache/huggingface/hub"
+malecns_home = "$HOME/code/data/malecns"
+hf_hub_cache = "$HOME/.cache/huggingface/hub"
 
 [connectome]
 version = "v1.0"

@@ -15,8 +15,8 @@ Run the following blocks in the same terminal. Keep macOS unlocked and the displ
 ## Optional single-trial check
 
 ```bash
-cd /Users/monomyth/code/codex/fly-brain
-export MALECNS_HOME=/Users/monomyth/code/codex/fly-brain/data
+cd $HOME/code/codex/fly-brain
+export MALECNS_HOME=$HOME/code/codex/fly-brain/data
 .venv/bin/python - <<'PYTASK'
 import json
 from pathlib import Path
@@ -35,8 +35,8 @@ This verifies one conventional-teacher demonstration from folded idle. Expect `s
 ## 1. Create a fresh shared dataset and explicit collection tasks
 
 ```bash
-cd /Users/monomyth/code/codex/fly-brain
-export MALECNS_HOME=/Users/monomyth/code/codex/fly-brain/data
+cd $HOME/code/codex/fly-brain
+export MALECNS_HOME=$HOME/code/codex/fly-brain/data
 FLY_RUN="cube20-folded-$(date +%Y%m%d-%H%M%S)"
 FLY_DATA="$MALECNS_HOME/datasets/rebot-pick/$FLY_RUN"
 FLY_MODEL="$MALECNS_HOME/checkpoints/rebot/$FLY_RUN"
@@ -100,7 +100,7 @@ Inspect `successes` and `attempts` in the report. There is no teacher control in
 ## 5. Use it in the UI
 
 1. Stop the current run. **Load task…** is available in the cube panel even when a task is already configured. The toolbar’s **Import task or trajectory** also accepts task files.
-2. Click **Load task…** and select `/Users/monomyth/code/codex/fly-brain/configs/cube20-folded.json`.
+2. Click **Load task…** and select `$HOME/code/codex/fly-brain/configs/cube20-folded.json`.
 3. Wait for the scene to settle. The status says **Ready**, but the arm is physically folded, with all six joints zero and the gripper closed.
 4. Click **Choose model…** and select the checkpoint directory printed by training (`$FLY_MODEL`).
 5. Click **Run fly brain**.

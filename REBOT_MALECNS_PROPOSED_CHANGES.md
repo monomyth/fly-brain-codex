@@ -1,6 +1,6 @@
 # ReBot Motion Lab: proposed support for a MaleCNS pickup experiment
 
-Proposal date: 2026-09-09. Based on read-only inspection of `/Users/monomyth/github/rebot-motion-lab`. No changes to that repository have been made. This document proposes future work; it does not authorize implementation.
+Proposal date: 2026-09-09. Based on read-only inspection of `$HOME/github/rebot-motion-lab`. No changes to that repository have been made. This document proposes future work; it does not authorize implementation.
 
 ## Objective and scope
 
@@ -130,7 +130,7 @@ Acceptance: existing core/MCP checks still pass, immediate slider tracking remai
 
 ## Expected code areas
 
-Paths below are relative to `/Users/monomyth/github/rebot-motion-lab`; new filenames are suggestions.
+Paths below are relative to `$HOME/github/rebot-motion-lab`; new filenames are suggestions.
 
 | Area | Likely responsibility |
 | --- | --- |

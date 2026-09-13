@@ -11,13 +11,14 @@ def calibration_identity(core):
 
 
 class RemoteFeedbackCore:
-    def __init__(self,core,host,project='/home/monomyth/code/codex/fly-brain',checkpoint='data/benchmark-bundle/checkpoint',root=None):
+    def __init__(self,core,host,project='code/codex/fly-brain',checkpoint='data/benchmark-bundle/checkpoint',root=None):
         if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.@-]*',host):raise ValueError('Invalid sensory worker SSH host')
         self.local=core;self.state=core.state;self.request_id=0;self.closed=False
         logs=home(root)/'runs/sensory-workers';logs.mkdir(parents=True,exist_ok=True)
         self.log=(logs/(str(uuid.uuid4())+'.log')).open('w')
         argv=['.venv-cuda/bin/python','-m','fly_brain.visual_dopamine.remote_features','--serve','--checkpoint',checkpoint,'--root','data/benchmark-bundle']
-        command='cd '+shlex.quote(project)+' && PYTHONPATH=src XDG_CACHE_HOME='+shlex.quote(project+'/.cache')+' CUDA_CACHE_PATH='+shlex.quote(project+'/.cache/cuda')+' '+shlex.join(argv)
+        directory=('"$HOME"/'+shlex.quote(project[2:])) if project.startswith('~/') else shlex.quote(project)
+        command='cd '+directory+' && PYTHONPATH=src XDG_CACHE_HOME="$PWD/.cache" CUDA_CACHE_PATH="$PWD/.cache/cuda" '+shlex.join(argv)
         self.process=subprocess.Popen(['ssh','-T','-o','BatchMode=yes','-o','ConnectTimeout=8',host,command],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=self.log,text=True,bufsize=1)
         try:
             ready=self._read(40)
@@ -64,7 +65,7 @@ class RemoteFeedbackCore:
         self.log.close()
 
 
-def attach(policy,host,project='/home/monomyth/code/codex/fly-brain',checkpoint='data/benchmark-bundle/checkpoint'):
+def attach(policy,host,project='code/codex/fly-brain',checkpoint='data/benchmark-bundle/checkpoint'):
     if not policy.metadata.get('feedback_circuit_id'):raise ValueError('Remote sensory computation requires a camera/body checkpoint')
     policy.core=RemoteFeedbackCore(policy.core,host,project,checkpoint,policy.root)
     return policy
@@ -80,7 +81,7 @@ def configure_runtime(policy,host=None):
         if host:raise ValueError('This checkpoint does not support CUDA sensory offload')
         return policy
     print(f'Sensory graph: {selected} over SSH/CUDA; motor decoding and simulator stay local',flush=True)
-    return attach(policy,selected,settings.get('sensory_project','/home/monomyth/code/codex/fly-brain'),settings.get('sensory_checkpoint','data/benchmark-bundle/checkpoint'))
+    return attach(policy,selected,settings.get('sensory_project','code/codex/fly-brain'),settings.get('sensory_checkpoint','data/benchmark-bundle/checkpoint'))
 
 
 def close_runtime(policy):

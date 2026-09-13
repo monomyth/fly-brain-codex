@@ -73,7 +73,7 @@ Reusing an explicitly supplied existing simulator still exposes RealityKit's in-
 
 ## Locations and evidence
 
-- Shared root: `/Users/monomyth/code/data/malecns/`
+- Shared root: `$HOME/code/data/malecns/`
 - Pilot/corrections: `datasets/rebot-pick/pilot-v1/`
 - Learned checkpoints: `checkpoints/rebot/`
 - Portable inference export: `exports/corrected-fast-slow-seed0/`

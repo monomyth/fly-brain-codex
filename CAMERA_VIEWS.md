@@ -24,7 +24,7 @@ The renderer uses a square-pixel ideal pinhole with vertical FOV 68 degrees and 
 
 ## Gripper: supplied Gemini 305 cradle assembly
 
-The current mount and housing are the meshes from the supplied [assembly preview](/Users/monomyth/github/rebot-b601-trinkets/output/cradle_support/B601_Gemini305_CradleSupportPreview.FCStd), registered to the simulator's `end_link` frame. The source project is read-only. The latest [side-view reference](/Users/monomyth/github/rebot-b601-trinkets/output/cradle_support/assembly_side.png) and its assembly source specify **15 degrees downward**, which supersedes the earlier 45-degree Gripper approximation. Front stays at 45 degrees.
+The current mount and housing are the meshes from the supplied assembly preview (`B601_Gemini305_CradleSupportPreview.FCStd`), registered to the simulator's `end_link` frame. The source project is read-only. The latest side-view reference (`assembly_side.png`) and its assembly source specify **15 degrees downward**, which supersedes the earlier 45-degree Gripper approximation. Front stays at 45 degrees.
 
 | Setting | Value |
 |---|---|
@@ -61,7 +61,7 @@ The sidebar uses one explicit gray selected-row color in both focused and unfocu
 Open the persistent review window with:
 
 ```sh
-cd /Users/monomyth/code/codex/fly-brain
+cd $HOME/code/codex/fly-brain
 .venv/bin/python scripts/preview_camera_rig.py
 ```
 

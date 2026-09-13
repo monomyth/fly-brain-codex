@@ -5,7 +5,7 @@ import numpy as np
 from fly_brain.visual_dopamine.motor_policy import MotorPolicy
 from fly_brain.visual_dopamine.remote_features import attach
 from fly_brain.visual_dopamine.trajectory_training import load_demonstrations
-p=argparse.ArgumentParser();p.add_argument('--checkpoint',type=Path,required=True);p.add_argument('--dataset',type=Path,required=True);p.add_argument('--host',default='blacktower.local');p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--checkpoint',type=Path,required=True);p.add_argument('--dataset',type=Path,required=True);p.add_argument('--host',required=True,help='SSH alias of an NVIDIA GPU host');p.add_argument('--output',type=Path,required=True);a=p.parse_args()
 positions={tuple(json.loads(f.read_text())['task']['cube_xy_mm']) for f in a.dataset.glob('episode-*/manifest.json')}
 examples,_=load_demonstrations(a.dataset,{'train':list(positions)});examples=examples[:4]
 if not examples:raise ValueError('No complete visual demonstrations')

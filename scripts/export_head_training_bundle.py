@@ -1,4 +1,4 @@
-"""Export a verified, compact continuation-training snapshot for Blacktower."""
+"""Export a verified, compact continuation-training snapshot for an NVIDIA GPU host."""
 import argparse
 import copy
 import json

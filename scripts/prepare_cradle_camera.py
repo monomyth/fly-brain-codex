@@ -10,8 +10,8 @@ from scipy.spatial import cKDTree
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/camera-rigs/cradle-v3'
-NATIVE=Path('/Users/monomyth/github/rebot-motion-lab-codex')
-SOURCE=Path('/Users/monomyth/github/rebot-b601-trinkets/output/cradle_support')
+NATIVE=Path.home()/'github/rebot-motion-lab-codex'
+SOURCE=Path.home()/'github/rebot-b601-trinkets/output/cradle_support'
 DTYPE=np.dtype([('normal','<f4',(3,)),('vertices','<f4',(3,3)),('attribute','<u2')])
 R=np.array([[0,0,1],[1,0,0],[0,1,0.]])
 # CAD gripper fingertip is Z=103.2093277 mm; the URDF end_link is at that fingertip.

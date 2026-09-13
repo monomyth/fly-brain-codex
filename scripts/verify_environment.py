@@ -6,7 +6,7 @@ from fly_brain.collect import collect
 
 report={'reset_checks':[]}
 poses=[]
-for path in sorted(Path('/Users/monomyth/code/codex/fly-brain/reports/gru-evaluation').glob('episode-*/steps.jsonl')):
+for path in sorted((Path(__file__).resolve().parents[1]/'reports/gru-evaluation').glob('episode-*/steps.jsonl')):
     lines=path.read_text().splitlines()
     if lines:
         observation=json.loads(lines[-1])['observation']
@@ -28,6 +28,6 @@ with EpisodeSimulator() as client:
         assert abs(position[0]-350)<2 and abs(position[1])<2 and abs(position[2]-24)<2,position
         report['reset_checks'].append({'trial':index+1,'phase':observation['phase'],'cube_position_mm':position})
     tasks=[{'input_mode':'state','cube_xy_mm':[350,0],'cube_size_mm':size,'hold_seconds':5,'timeout_seconds':60} for size in [10,90]]
-    report['size_checks']=collect(client,tasks,'/Users/monomyth/code/data/malecns/datasets/rebot-pick/size-boundary-final')
-write_json('/Users/monomyth/code/codex/fly-brain/reports/final-native-check.json',report)
+    report['size_checks']=collect(client,tasks,str(Path(__file__).resolve().parents[1]/'data/datasets/rebot-pick/size-boundary-final'))
+write_json(Path(__file__).resolve().parents[1]/'reports/final-native-check.json',report)
 print(json.dumps(report,indent=2))

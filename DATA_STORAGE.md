@@ -2,19 +2,19 @@
 
 Downloaded MaleCNS reference files stay in:
 
-`/Users/monomyth/code/data/malecns/v1.0`
+`$HOME/code/data/malecns/v1.0`
 
 All Codex-generated datasets, model checkpoints, processed circuits, feature
 caches, exports, brain layouts and run records belong in:
 
-`/Users/monomyth/code/codex/fly-brain/data`
+`$HOME/code/codex/fly-brain/data`
 
 The project data directory's `v1.0` link points to the downloaded references;
 it does not duplicate them. Files belonging to other projects were not moved.
 The relocation record is in `reports/pickup-fix/storage-migration.json`.
 
 The CLI and simulator UI now default to the project directory. Set
-`FLY_BRAIN_DATA_HOME=/Users/monomyth/code/codex/fly-brain/data` explicitly if
+`FLY_BRAIN_DATA_HOME=$HOME/code/codex/fly-brain/data` explicitly if
 needed. Legacy `--home` values pointing at the old shared root are redirected
 for compatibility; temporary portable bundles can still supply their own root.
 Legacy generated-data paths passed through the CLI are also redirected.

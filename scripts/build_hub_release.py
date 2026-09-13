@@ -5,23 +5,24 @@ from fly_brain.assets import checked_files, sha256_file, write_json
 
 ROOT = Path(__file__).resolve().parents[1]
 
+from fly_brain.publication import portable as portable_metadata, anonymous_tar_member
+PRIVATE_CONFIG = ROOT/'data/publication-private.json'
+
+
 def portable(value):
-    if isinstance(value, dict): return {k: portable(v) for k,v in value.items()}
-    if isinstance(value, list): return [portable(v) for v in value]
-    if isinstance(value, str):
-        for prefix in (str(ROOT)+'/', '/home/monomyth/code/codex/fly-brain/'):
-            value = value.replace(prefix, 'project:/')
-        value = value.replace('/Users/monomyth/code/data/malecns/', 'reference:/')
-    return value
+    settings=json.loads(PRIVATE_CONFIG.read_text()) if PRIVATE_CONFIG.exists() else {}
+    return portable_metadata(value, ROOT, settings.get('redact_strings', []))
+
 
 def archive(source, target):
     with tarfile.open(target, 'w:gz', compresslevel=6) as tar:
         for f in sorted(source.rglob('*')):
-            if f.is_file(): tar.add(f, arcname=f.relative_to(source), recursive=False)
+            if f.is_file() and '__pycache__' not in f.parts and '.cache' not in f.parts and f.suffix not in ('.pyc','.pyo') and not f.name.startswith('.env'):
+                tar.add(f, arcname=f.relative_to(source), recursive=False, filter=anonymous_tar_member)
     return {'file': target.name, 'bytes': target.stat().st_size, 'sha256': sha256_file(target)}
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__); p.add_argument('--output',type=Path,required=True); a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__); p.add_argument('--output',type=Path,required=True); p.add_argument('--training-bundle',type=Path,required=True); a=p.parse_args()
     out=a.output.resolve(); out.mkdir(parents=True,exist_ok=True)
     stage=out/'staging'; stage.mkdir(exist_ok=True)
     stable=ROOT/'data/checkpoints/rebot/retain-grasp-20260911'
@@ -67,9 +68,10 @@ def main():
     write_json(continuation/'manifest.json',{'status':'Unqualified raw 12000-iteration CUDA continuation; not deployed','files':{f.name:sha256_file(f) for f in continuation.iterdir() if f.name!='manifest.json'}})
     release['unqualified_cuda_continuation']=archive(continuation,out/'cuda-continuation.tar.gz')
     training = stage/'training-bundle'
-    shutil.copytree(ROOT/'data/exports/blacktower-direct-20260912', training, dirs_exist_ok=True,
+    shutil.copytree(a.training_bundle, training, dirs_exist_ok=True,
                     ignore=shutil.ignore_patterns('__pycache__','*.pyc','.cache'))
     shutil.copy2(ROOT/'scripts/continue_head_training.py',training/'continue_head_training.py')
+    shutil.copy2(ROOT/'src/fly_brain/visual_dopamine/remote_features.py',training/'src/fly_brain/visual_dopamine/remote_features.py')
     for f in training.rglob('*.json'):
         if f.name != 'manifest.json': write_json(f,portable(json.loads(f.read_text())))
     write_json(training/'manifest.json',{'schema':'frozen-sensory-head-training-v1',

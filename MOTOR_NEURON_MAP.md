@@ -19,7 +19,7 @@ claim that a robot joint is anatomically equivalent to a fly joint.
 
 Tr = trochanter; Ti = tibia; Ta = tarsus. The full body-ID list and individual
 readout coefficients are in [neuron-map.csv](reports/motor-control/neuron-map.csv).
-The immutable shared mapping is `/Users/monomyth/code/codex/fly-brain/data/motor-circuits/4ba94c49dd7f3e6e6243101698dfc037d45e7d681377d587b5c1bc0b4cc9ebf7/mapping.json`.
+The immutable shared mapping is `$HOME/code/codex/fly-brain/data/motor-circuits/4ba94c49dd7f3e6e6243101698dfc037d45e7d681377d587b5c1bc0b4cc9ebf7/mapping.json`.
 
 ## Signal route
 
@@ -63,15 +63,15 @@ held-out joint responses at best, but **0/2 frozen full attempts and 0/1 online
 attempt picked up and held the cube**. Read [RESULTS.md](reports/motor-control/RESULTS.md)
 for the exact limits. The current model folder is:
 
-`/Users/monomyth/code/codex/fly-brain/data/checkpoints/rebot/seven-motor-20260910-151942/seed-0`
+`$HOME/code/codex/fly-brain/data/checkpoints/rebot/seven-motor-20260910-151942/seed-0`
 
 ## Run the stages
 
 Generated data and checkpoints remain in this project’s data directory; downloaded references stay shared.
 
 ```sh
-cd /Users/monomyth/code/codex/fly-brain
-export MALECNS_HOME=/Users/monomyth/code/codex/fly-brain/data
+cd $HOME/code/codex/fly-brain
+export MALECNS_HOME=$HOME/code/codex/fly-brain/data
 STAMP=$(date +%Y%m%d-%H%M%S)
 
 .venv/bin/fly-brain motor-prepare
